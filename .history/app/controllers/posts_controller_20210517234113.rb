@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
   end
 
   def new
@@ -11,14 +10,6 @@ class PostsController < ApplicationController
     Post.create(post_params)
     redirect_to new_post_path
   end
-
-  def updated
-  end
-
-  def destroy
-  end
-
-
 
   private
   def post_params
